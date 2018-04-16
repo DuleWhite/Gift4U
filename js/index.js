@@ -11,9 +11,22 @@ $(function(){
 	else{
 		slick.width($(window).width()-50);
 	}
+	
 	if($(window).width()<940){
 		$(".faq img").width(0.90 * $(window).width())
+	}else{
+		$(".faq img").width(940);
 	}
+
+	if($(window).width()<940){
+		$(".aboutus .cd-fixed-bg .rect").width(0.53 * $(window).width())
+	}else{
+		$(".aboutus .cd-fixed-bg .rect").width(500);
+	}
+
+	$(".aboutus .cd-fixed-bg .rect").css(
+			"left",(($(window).width()-this.width())/2)+"px"
+		)
 });
 $(window).resize(function(){
 	checkSlick();
@@ -22,6 +35,12 @@ $(window).resize(function(){
 	}
 	else{
 		slick.width(940);
+	}
+
+	if($(window).width()<940){
+		$(".aboutus .cd-fixed-bg .rect").width(0.53 * $(window).width())
+	}else{
+		$(".aboutus .cd-fixed-bg .rect").width(500);
 	}
 })
 function checkSlick(){

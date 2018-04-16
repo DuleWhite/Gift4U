@@ -177,11 +177,12 @@
 
 
 .cd-fixed-bg {
- min-height: 100%;
- background-size: cover;
- background-attachment: fixed;
- background-repeat: no-repeat;
- background-position: center center;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top top;
+    position: relative;
 }
  
 .cd-fixed-bg.cd-bg-1 {
@@ -194,3 +195,37 @@
  min-height: 100%;
 }
 
+
+.aboutus{
+    background-color: rgb(77,125,150);
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+}
+.aboutus .cd-fixed-bg .rect{
+    position: absolute;
+    top:125px;
+    margin:  0 auto;
+    max-width: 500px;
+    height: 250px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    vertical-align: center;
+}
+
+.aboutus .cd-fixed-bg .rect h1{
+    line-height: 250px;
+    font-size: 32px;
+    color: #111;
+    font-family: Museo-700;
+}
+.aboutus .cd-scrolling-bg .cd-container p{
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px;
+    font-size: 16px;
+    font-family: Museo-700;
+    color: white;
+    text-align: center;
+}
