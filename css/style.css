@@ -1,0 +1,64 @@
+.logo {
+    display: block;
+}
+
+.carousel {
+    height: 300px;
+    background-color: #eee;
+}
+
+.carousel .item {
+    height: 300px;
+    background-color: #eee;
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        height: 400px;
+    }
+    .carousel .item {
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel {
+        height: 500px;
+    }
+    .carousel .item {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel {
+        height: 600px;
+    }
+    .carousel .item {
+        height: 600px;
+    }
+}
+
+.carousel-caption h1 {
+    color: #BDDBE6;
+    margin-bottom: 20%;
+    font-family: Museo-700, serif;
+    font-size: 35pt;
+}
+
+
+
+
+
+.slick { width: 900px; margin: 100px auto;}
+.slick img { width: 280px; padding: 10px;}
+.slick-prev:before, .slick-next:before { position: absolute; left: 0; top: 1px; color: #ccc;}
+.slick-prev { left: -35px;}
+.slick-next { right: -35px;}
+.slick-dots { bottom: -35px;}
+.product-item{
+    text-align: center;
+}
+.product-item img{
+    margin: 0 auto;
+}
