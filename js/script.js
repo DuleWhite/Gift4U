@@ -15,8 +15,8 @@ $(function(){
 	
 	// .faq img
 	var faq_img = $(".faq img");
-	if($(window).width()<940){ faq_img.width(0.90 * $(window).width())
-	}else{ faq_img.width(940); }
+	if($(window).width()<640){ faq_img.width(0.90 * $(window).width())
+	}else{ faq_img.width(640); }
 
 	// .aboutus .cd-fixed-bg .rect
 	var rect = $(".aboutus .cd-fixed-bg .rect");
@@ -43,8 +43,8 @@ $(window).resize(function(){
 
 	// .faq img
 	var faq_img = $(".faq img");
-	if($(window).width()<940){ faq_img.width(0.95 * $(window).width() - 50 )
-	}else{ faq_img.width(940); }
+	if($(window).width()<640){ faq_img.width(0.95 * $(window).width() - 50 )
+	}else{ faq_img.width(640); }
 	
 	// .aboutus .cd-fixed-bg .rect
 	var rect = $(".aboutus .cd-fixed-bg .rect");
