@@ -49,6 +49,7 @@
     }
     .carousel .carousel-inner .item img{
         width: 100%;
+        height: 130%;
     }
 }
 
@@ -161,6 +162,7 @@
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: translateY(0);
+    border: none;
 }
 
 .product-panel:hover .image .product-qwbtn{
@@ -280,3 +282,66 @@
     color: white;
     text-align: center;
 }
+
+.product-quick-view-modal .artModal-dialog .artModal-content .modal-style{
+    width: 940px;
+    
+    height: 660px;
+    position: relative;
+    background-color: white;
+}
+.product-quick-view-modal .artModal-dialog .artModal-content .modal-style .btn-close{
+    display: block;
+    position: absolute;
+    margin-top: 4px;
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    font-family: Louis-George-Cafe-Bold;
+    right: 9px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #a1a1a1;
+    border: none;
+    background-color: transparent;
+    z-index: 99;
+}
+.product-quick-view-modal .artModal-dialog .artModal-content .modal-style .btn-close:hover{
+    color:black;
+}
+
+.product-quick-view-modal .artModal-dialog .artModal-content .modal-style .content{
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+}
+.product-quick-view-modal .artModal-dialog .artModal-content .modal-style .content .product-picture{
+    width: 500px;
+    height: 500px;
+    border: 1px #ccc solid;
+    overflow: hidden;
+}
+.product-quick-view-modal .artModal-dialog .artModal-content .modal-style .content .product-picture img{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    /*50% {opacity: 0.5;}/*过渡状态 透明度为0*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    /*50% {opacity: 0.5;}*/
+    100% {opacity: 1;}  
+}  
+#magiczoom-zoom{    
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 0.5s;/*针对webkit内核*/  
+}
+

@@ -11,15 +11,23 @@
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- artModal -->
+    <link rel="stylesheet" type="text/css" href="css/artModal.css">
     <!-- JQuery -->
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Slick -->
     <script type="text/javascript" src="slick/slick.js"></script>
+    <!-- artModal -->
+    <script type="text/javascript" src="js/artModal.js"></script>
+    <!-- magicZoom -->
+    <script type="text/javascript" src="js/magicZoom.js"></script>
     <title>Home | Gift4U</title>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -97,7 +105,7 @@
                 <div class="image">
                     <img src="img/Product1.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -113,7 +121,7 @@
                 <div class="image">
                     <img src="img/Product2.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -129,7 +137,7 @@
                 <div class="image">
                     <img src="img/Product3.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -145,7 +153,7 @@
                 <div class="image">
                     <img src="img/Product4.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -161,7 +169,7 @@
                 <div class="image">
                     <img src="img/Product5.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -177,7 +185,7 @@
                 <div class="image">
                     <img src="img/Product6.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -193,7 +201,7 @@
                 <div class="image">
                     <img src="img/Product7.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -209,7 +217,7 @@
                 <div class="image">
                     <img src="img/Product8.jpg">
                     <span class="product-tag">Best Seller</span>
-                    <a  class="product-qwbtn">QUICK VIEW</a>
+                    <button class="product-qwbtn" data-toggle="artModal" data-target="product-quick-view-modal">QUICK VIEW</button>
                 </div>
                 <div class="product-info" class="container">
                     <h3>I'm a product</h3>
@@ -250,6 +258,26 @@
             <p>© 2018 by Gift4U</p>
         </div>
     </footer>
+
+    <!-- .product-quick-view-modal -->
+    <div class="product-quick-view-modal artModal fade" id="product-quick-view-modal">
+        <div class="artModal-dialog">
+            <div class="artModal-content">
+                <div class="modal-style">
+                    <button class="btn-close" data-dismiss="artModal">x</button>
+                    <div class="content row">
+                        <div class="col-md-7">
+                            <div class="product-picture">
+                                <img id="zoom-img" src="img/Product-L1.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5" style="background-color: transparent; height: 500px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.product-quick-view-modal -->
 </body>
 
 </html>

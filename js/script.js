@@ -27,8 +27,8 @@ $(function() {
     var fixed_bg = $('.aboutus .cd-fixed-bg');
     var fixed_bg_height = fixed_bg.height();
     $(window).on('scroll', function() {
-        var scrollTop = ($(window).scrollTop() - 1957)/2;
-        // console.log(scrollTop);
+        var scrollTop = Math.floor(($(window).scrollTop()-fixed_bg.offset().top)/2);
+        console.log(scrollTop);
         fixed_bg.css('background-position', '50% ' + scrollTop + 'px');
     });
 
@@ -38,6 +38,9 @@ $(function() {
         rect.width(0.53 * $(window).width())
     } else { rect.width(500); }
     rect.css("left", (($(window).width() - rect.width()) / 2) + "px")
+
+
+    $("#zoom-img").magicZoom();
 
 });
 $(window).resize(function() {
