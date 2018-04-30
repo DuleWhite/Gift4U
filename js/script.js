@@ -28,7 +28,7 @@ $(function() {
     var fixed_bg_height = fixed_bg.height();
     $(window).on('scroll', function() {
         var scrollTop = Math.floor(($(window).scrollTop()-fixed_bg.offset().top)/2);
-        console.log(scrollTop);
+        // console.log(scrollTop);
         fixed_bg.css('background-position', '50% ' + scrollTop + 'px');
     });
 
@@ -38,10 +38,8 @@ $(function() {
         rect.width(0.53 * $(window).width())
     } else { rect.width(500); }
     rect.css("left", (($(window).width() - rect.width()) / 2) + "px")
-
-
+    // magicZoom
     $("#zoom-img").magicZoom();
-
 });
 $(window).resize(function() {
     // .slick
@@ -76,4 +74,4 @@ $(window).resize(function() {
         rect.width(0.53 * $(window).width())
     } else { rect.width(500); }
     rect.css("left", (($(window).width() - rect.width()) / 2) + "px");
-})
+});
