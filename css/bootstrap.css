@@ -1121,7 +1121,7 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
+  /*max-width: 100%;*/
   height: auto;
 }
 .img-rounded {
@@ -4165,8 +4165,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
+  /*min-height: 50px;*/
+  /*margin-bottom: 20px;*/
   /*
   border: 1px solid transparent;
   */

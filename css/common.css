@@ -1,0 +1,23 @@
+body{
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.logo {
+    display: block;
+}
+
+footer {
+    background-color: #eee;
+}
+
+.copyright {
+    height: 40px;
+    text-align: center;
+}
+
+.copyright p {
+    line-height: 40px;
+    margin: 0;
+}

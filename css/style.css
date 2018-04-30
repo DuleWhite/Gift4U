@@ -1,23 +1,30 @@
-.logo {
-    display: block;
-}
-
 .carousel {
     height: 300px;
     background-color: #eee;
+    position: relative;
 }
 
-.carousel .item {
+.carousel .carousel-inner .item {
     height: 300px;
     background-color: #eee;
+}
+
+@media (min-width: 0) {
+    .carousel .carousel-inner .item img{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
     .carousel {
         height: 400px;
     }
-    .carousel .item {
+    .carousel .carousel-inner .item {
         height: 400px;
+    }
+    .carousel .carousel-inner .item img{
+        width: 992px;
     }
 }
 
@@ -25,8 +32,11 @@
     .carousel {
         height: 500px;
     }
-    .carousel .item {
+    .carousel .carousel-inner .item {
         height: 500px;
+    }
+    .carousel .carousel-inner .item img{
+        width: 1200px;
     }
 }
 
@@ -34,16 +44,24 @@
     .carousel {
         height: 600px;
     }
-    .carousel .item {
+    .carousel .carousel-inner .item {
         height: 600px;
+    }
+    .carousel .carousel-inner .item img{
+        width: 100%;
     }
 }
 
-.carousel-caption h1 {
+.carousel h1 {
+    position: absolute;
     color: #BDDBE6;
-    margin-bottom: 20%;
+    bottom: 30% ;
     font-family: Museo-700, serif;
-    font-size: 35pt;
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
 }
 
 .slick {
@@ -82,7 +100,13 @@
     margin-bottom: 20px;
 }
 
-.product-item .image {
+.product-panel {
+    width: 260px;
+    cursor: pointer;
+    margin:0 auto;
+}
+
+.product-panel .image {
     position: relative;
     width: 260px;
     height: 260px;
@@ -94,14 +118,14 @@
     margin:0 auto;
 }
 
-.product-item .image img {
+.product-panel .image img {
     margin: 0 auto;
     padding: 0;
     width: 260px;
     height: 260px;
 }
 
-.product-item .image span {
+.product-panel .image .product-tag {
     background-color: rgba(58, 128, 153, 1);
     font-size: 16px;
     max-width: 80%;
@@ -117,6 +141,38 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     font-family: Museo-700;
+}
+
+.product-panel .image .product-qwbtn{
+    height: 50px;
+    width: 260px;
+    z-index: 99;
+    display: block;
+    text-decoration: none;
+    color: rgba(10,15,19,1);
+    line-height: 50px!important;
+    font: normal normal normal 14px/1.43em Helvetica-W01-Light,Helvetica-W02-Light,sans-serif;
+    background-color: rgba(255,255,255,0.75);
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: translateY(0);
+}
+
+.product-panel:hover .image .product-qwbtn{
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: translateY(-50px);
+
 }
 
 .product-item .product-info{
@@ -158,7 +214,7 @@
     text-align: center;
 }
 .faq img{
-    max-width: 740px;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
 }
@@ -174,24 +230,19 @@
 
 
 .cd-fixed-bg {
-    min-height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top top;
+    background-color: white;
+    background-image: url(../img/banner1.jpg);
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-size: auto 260%;
+    height: 580px;
     position: relative;
 }
  
 .cd-fixed-bg.cd-bg-1 {
-    background-image: url("../img/banner10.jpg");
     width: 100%;
     height: 500px;
 }
- 
-.cd-scrolling-bg {
- min-height: 100%;
-}
-
 
 .aboutus{
     background-color: rgb(77,125,150);
@@ -206,7 +257,7 @@
     max-width: 500px;
     height: 250px;
     overflow: hidden;
-    background-color: rgba(255,255,255,0.94);
+    background-color: white;
     text-align: center;
     vertical-align: center;
 }
@@ -214,7 +265,7 @@
 .aboutus .cd-fixed-bg .rect h1{
     margin: 0;
     line-height: 250px;
-    font-size: 20px/0.2em;
+    font-size: 40px;
     color: #BDDBE6;
     font-family: Museo-700;
 }
@@ -228,16 +279,4 @@
     font-family: Museo-700;
     color: white;
     text-align: center;
-}
-
-footer{
-    background-color: #eee;
-}
-.copyright{
-    height: 40px;
-    text-align: center;
-}
-
-.copyright p{
-    line-height: 40px;
 }
