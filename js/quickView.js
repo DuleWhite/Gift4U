@@ -6,7 +6,12 @@ $(function(){
     	// console.log(n);
         var oldPath = this.src, newPath = "";
         var oldPaths = oldPath.split(".");
-        for (var i = 0; i < oldPaths.length - 1; i++) { newPath += oldPaths[i]; newPath+="."; }
+        for (var i = 0; i < oldPaths.length - 1; i++) { 
+        	if(newPath!=""){
+        		newPath+=".";
+        	}
+        	newPath += oldPaths[i];
+        }
         newPath += '-L.'; newPath += oldPaths[oldPaths.length-1];
         $("#zoom-img").attr('src',newPath);
         $("#magiczoom-zoom").css('background-image','url('+newPath+')');
