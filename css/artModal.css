@@ -20,18 +20,25 @@
     _height: expression(documentElement.clientHeight);
 }
 
-.artModal .artModal-dialog {
-    position: relative;
-    margin: auto auto 
+.artModal .artModal-dialog{
     vertical-align: center;
+    position: relative;
+    width: 940px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: white;
 }
 
 .artModal .artModal-dialog .artModal-content {
-    position: relative;
-    width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    min-height: 660px;
 }
 
+.artModal .artModal-dialog .artModal-content .modal-body{
+    padding: 0;
+    margin: 0;
+}
 .fade {
     opacity: 0;
     -webkit-transition: opacity 0.15s linear;

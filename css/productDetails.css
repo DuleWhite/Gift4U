@@ -1,0 +1,189 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    /*初始状态 透明度为0*/
+    /*50% {opacity: 0.5;}/*过渡状态 透明度为0*/
+    100% {
+        opacity: 1;
+    }
+    /*结束状态 透明度为1*/
+}
+
+@-webkit-keyframes fade-in {
+    /*针对webkit内核*/
+    0% {
+        opacity: 0;
+    }
+    /*50% {opacity: 0.5;}*/
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-details {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.product-details-right {
+    padding: 0;
+}
+
+.product-picture {
+    width: 500px;
+    height: 500px;
+    border: 1px #ccc solid;
+    overflow: hidden;
+}
+
+.product-picture img {
+    width: 500px;
+    height: 500px;
+}
+
+#magiczoom-zoom {
+    animation: fade-in;
+    /*动画名称*/
+    animation-duration: 0.5s;
+    /*动画持续时间*/
+    -webkit-animation: fade-in 0.5s;
+    /*针对webkit内核*/
+}
+
+.product-picture-guide {
+    margin-top: 10px;
+    padding: 0;
+    width: 510px
+}
+
+.product-picture-guide img {
+    width: 43px;
+    height: 43px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px #ccc solid;
+}
+
+.product-picture-guide img.selected {
+    border: 2px black solid;
+}
+
+.product-name h1 {
+    margin: 0;
+    font: normal normal normal 48px/1.146em Museo-700, serif;
+}
+
+.product-price {
+    display: inline-block;
+}
+
+.product-price h3 {
+    margin: 0;
+    padding-top: 23px;
+    margin-left: 5px;
+    font: normal normal normal 24px/1.25em Museo-700, serif;
+}
+
+.product-details-left a {
+    color: #AFAFB1;
+    margin-left: 5px;
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    font-size: 12px;
+    line-height: 25px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.product-details-left a:hover {
+    color: #f5f6f6;
+}
+
+.product-details-left .color {
+    margin-top: 24px;
+}
+
+.product-details-left .color ul {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    list-style: none;
+}
+
+.product-details-left .color ul li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 14px 6px 0;
+}
+
+.product-details-left .color ul li .color-label {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #c9c9c9;
+}
+
+.product-details-left .color ul li .color-label:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 1px 2px #3899EC;
+}
+
+.product-details-left .color ul li .color-label.selected:not(.disabled):after {
+    border: 1px solid #5A5959;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    position: absolute;
+    border-radius: 50%;
+    top: -3px;
+    left: -3px;
+    opacity: .5;
+}
+
+.product-details-left h4 {
+    color: #5A5959;
+    margin-bottom: 12px;
+    display: block;
+    line-height: 1;
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    font-size: 15px;
+    opacity: .75;
+}
+
+.product-details-left button {
+    margin-top: 30px;
+    background-color: rgba(58, 128, 153, 1);
+    border-width: 0;
+    border-color: rgba(58, 128, 153, 1);
+    border-radius: 0px;
+    font: normal normal normal 16px/1.55em Museo-Slab-W01-100, serif;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.product-details-left .quantity input {
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    width: 82px;
+    color: #575757;
+    height: 43px;
+    padding-left: 13px;
+    padding-right: 27px;
+}
+
+.product-details-left .quantity input::-webkit-outer-spin-button,
+.product-details-left .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.product-details-left .quantity input[type="number"] {
+    -moz-appearance: textfield;
+}
