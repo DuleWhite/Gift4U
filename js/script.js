@@ -38,8 +38,6 @@ $(function() {
         rect.width(0.53 * $(window).width())
     } else { rect.width(500); }
     rect.css("left", (($(window).width() - rect.width()) / 2) + "px")
-    // magicZoom
-    $("#zoom-img").magicZoom();
 });
 $(window).resize(function() {
     // .slick
