@@ -1,0 +1,29 @@
+.product-details {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+@media (min-width: 0) {
+    .product-details{
+        width: 260px;
+    }
+}
+
+@media (min-width: 768px) {
+    .product-details{
+        width: 260px;
+    }
+}
+
+@media (min-width: 992px) {
+    .product-details{
+        width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-details{
+        width: 900px;
+    }
+}

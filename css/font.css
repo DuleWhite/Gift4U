@@ -8,6 +8,12 @@
     src: url("../font/Antreas.ttf");
 }
 
+@font-face{
+    font-family: glyphicons;
+    src: url("../font/glyphicons-halflings-regular.ttf");
+    /*src: ulr("../font/glyphicons.woff");*/
+}
+
 @font-face {
     font-family: "Museo-Slab-W01-100";
     src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/01ab709f-22cf-4831-b24a-8cf4eb852687.eot?#iefix");

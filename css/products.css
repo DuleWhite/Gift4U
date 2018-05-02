@@ -79,21 +79,24 @@
 .product-panel .image .product-qwbtn{
     height: 50px;
     width: 260px;
+    margin:0;
+    padding: 0;
     z-index: 99;
     display: block;
     text-decoration: none;
-    color: rgba(10,15,19,1);
+    color: rgba(10, 15, 19, 1);
     line-height: 50px!important;
-    font: normal normal normal 14px/1.43em Helvetica-W01-Light,Helvetica-W02-Light,sans-serif;
-    background-color: rgba(255,255,255,0.75);
+    font: normal normal normal 14px/1.43em Helvetica-W01-Light, Helvetica-W02-Light, sans-serif;
+    background-color: rgba(255, 255, 255, 0.75);
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
+    -webkit-transform: scale(1);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
+    -ms-transform: scale(1);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: translateY(0);
+    border: none;
 }
 
 .product-panel:hover .image .product-qwbtn{

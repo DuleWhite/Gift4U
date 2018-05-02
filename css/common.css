@@ -79,3 +79,42 @@ h1 {
     margin: 0;
     font: normal normal normal 48px/1.146em Museo-700, serif;
 }
+
+
+@media (min-width: 0) {
+    .navigation{
+        width: 260px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navigation{
+        width: 900px;
+    }
+}
+
+.navigation{
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation ul li{
+    display: inline-flex;
+}
+.navigation ul li+li:before{
+    content: "/";
+    margin: 0 5px;
+    display: inline-block;
+}
+.navigation ul li a{
+    font: normal normal normal 16px/1.55em Museo-Slab-W01-100,serif;
+    color: #0A0F13;
+    text-decoration: none;
+    color: inherit;
+    /*opacity: .5;*/
+}

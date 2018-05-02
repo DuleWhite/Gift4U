@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="SHORTCUT ICON" href="img/logo2.ico" />
+    <link rel="SHORTCUT ICON" href="../img/logo2.ico" />
     <!-- Bootstrap -->
     <link href="../css/bootstrap.css" rel="stylesheet">
     <!-- JQuery -->
-    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
     <!-- Bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
-    <title>[Product Name] | Gift4U</title>
+    <!-- magicZoom -->
+    <script type="text/javascript" src="../js/magicZoom.js"></script>
+    <title>I'm a product | Gift4U</title>
     <link rel="stylesheet" type="text/css" href="../css/font.css">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/productDetails.css">
@@ -25,7 +27,7 @@
 <body>
     <!-- .logo -->
     <div class="logo container">
-        <a href="#">
+        <a href="../index.html">
                 <img src="../img/logo2.jpg" width="120px" height="120px">
             </a>
     </div>
@@ -64,27 +66,36 @@
         <!-- /.container -->
     </nav>
     <!-- /.navbar -->
+    <!-- .navigation -->
+    <div class="navigation container">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a style="opacity: .5">I'm a product</a></li>
+        </ul>
+    </div>
+    <!-- /.navigation -->
     <!-- .product-details -->
-    <div class="product-details row">
-        <div class="product-details-right col-md-7">
+    <div class="product-details">
+        <div class="product-details-right">
             <div class="product-picture">
-                <div class="product-picture">
-                    <img id="zoom-img" src="../img/Product1-L.jpg">
-                </div>
-                <div class="product-picture-guide">
-                    <img class="guide-img selected" src="../img/Product1.jpg">
-                    <img class="guide-img" src="../img/Product2.jpg">
-                </div>
+                <i class="zoom-hint"></i>
+                <img id="zoom-img" src="../img/Product1-L.jpg">
+            </div>
+            <div class="product-picture-guide">
+                <img class="guide-img selected" src="../img/Product1.jpg">
+                <img class="guide-img" src="../img/Product2.jpg">
+            </div>
+            <div class="product-description">
+                <p>I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.</p>
             </div>
         </div>
-        <div class="product-details-left col-md-5">
+        <div class="product-details-left">
             <div class="product-name">
                 <h1>I'm a Product</h1>
             </div>
             <div class="product-price">
                 <h3>$88.88</h3>
             </div>
-            <a>View Full Details</a>
             <div class="color">
                 <h4>Color</h4>
                 <ul>
@@ -98,12 +109,38 @@
             </div>
             <div class="quantity">
                 <h4>Quantity</h4>
-                    <input id= "quantity-input" type="number" name="quantity" min=1>
+                <input id="quantity-input" type="number" name="quantity" min=1>
             </div>
             <button>ADD TO CART</button>
+            <ul class="product-parameters">
+                <li>
+                    <button>
+                        <h3 class="on">PRODUCT INFO</h3>
+                    </button>
+                    <p>
+                        I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item.
+                    </p>
+                </li>
+                <li>
+                    <button>
+                        <h3 class="off">RETURN & REFUND POLICY</h3>
+                    </button>
+                    <p>
+                        I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.
+                    </p>
+                </li>
+                <li>
+                    <button>
+                        <h3 class="off">SHIPPING INFO</h3>
+                    </button>
+                    <p>
+                        I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from you with confidence.
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
-    <!-- / .product-details -->
+    <!-- /.product-details -->
     <footer>
         <div class="copyright container">
             <p>© 2018 by Gift4U</p>
