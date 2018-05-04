@@ -1,0 +1,355 @@
+.cart-list {
+    margin: 40px auto 150px;
+    width: 900px;
+}
+
+.continue-shopping {
+    overflow: hidden;
+}
+
+.continue-shopping a {
+    padding: 5px;
+    padding-top: 12px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: rgb(58, 128, 153);
+    font-size: 13px;
+    font-family: Museo-700, serif;
+    float: left;
+}
+
+.continue-shopping a span {
+    font-size: 11px;
+    margin-right: 4px;
+}
+
+
+.checkout {
+    float: right;
+    width: 100%;
+    min-height: 42px;
+    margin-left: 20px;
+    background-color: rgb(58, 128, 153);
+    color: white;
+    font-size: 14px;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+}
+
+.continue-shopping .checkout {
+    width: 220px;
+}
+
+.item-list {
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.item-list .list-header {
+    overflow: hidden;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 10px 0;
+    border-color: rgba(10, 15, 19, 0.2);
+}
+
+.item-list .list-header .list-title {
+    float: left
+}
+
+.item-list .list-header .list-title h2,
+.item-list .list-header .list-title span {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: Futura-LT-Book;
+}
+
+.item-list .list-header .list-parameters {
+    padding: 0;
+
+    width: 368px;
+    float: right;
+    margin-top: 8px;
+}
+
+.item-list .list-header .list-parameters div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: inline-block;
+    font-size: 13px;
+    width: 120px;
+    font-family: Futura-LT-Book;
+}
+
+.item-list .list-header .list-parameters div:last-child {
+    text-align: right;
+}
+
+.item-list .list-body .item {
+    padding: 35px 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgba(10, 15, 19, 0.2);
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    font-size: 15px;
+}
+
+.item {
+    overflow: hidden;
+    min-height: 190px;
+}
+
+.item .item-left {
+    float: left;
+    position: relative;
+}
+
+.item .item-left a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(10, 15, 19, 0.2);
+    width: 118px;
+    height: 118px;
+    overflow: hidden;
+}
+
+.item .item-left a img {
+    width: 120px;
+    height: 120px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.item .item-left .item-info {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 140px;
+    min-width: 300px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.item .item-left .item-info h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.item .item-left .item-info .item-property {
+    margin: 15px 0;
+    line-height: 1.7;
+}
+
+.item .item-left .item-info .item-property span {
+    display: block;
+    font-size: 15px;
+    color: rgba(10, 15, 19, 0.6);
+}
+
+.item .item-left .item-info .btn-remove {
+    padding: 5px;
+    padding-left: 0!important;
+    background: transparent;
+    border: none;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+.item .item-right {
+    float: right;
+    width: 368px;
+}
+
+.item .item-right div {
+    width: 120px;
+    display: inline-block;
+}
+
+.item .item-right div:last-child {
+    text-align: right;
+}
+
+.item .item-right input {
+    width: 82px;
+    color: #575757;
+    height: 43px;
+    padding-left: 13px;
+    padding-right: 27px;
+    font-family: serif;
+    font-size: 14px;
+}
+
+.item .item-right input::-webkit-outer-spin-button,
+.item .item-right input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.item .item-right input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.summary {
+    overflow: hidden;
+}
+
+.summary .summary-left {
+    width: 60%;
+    min-height: 230px;
+    float: left;
+    position: relative;
+}
+
+.summary .summary-right {
+    width: 40%;
+    min-height: 230px;
+    float: right;
+}
+
+.summary .summary-left .btn-add-note {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    color: rgb(58, 128, 153);
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    font-size: 15px;
+}
+
+.summary .summary-left .btn-add-note span {
+    margin-left: 8px;
+}
+
+.summary .summary-left .cart-note textarea {
+    resize: none;
+    border: 1px solid rgba(10, 15, 19, 0.2);
+    height: 100px;
+    min-width: 300px;
+    max-width: 350px;
+    width: 350px;
+    padding: 6px 12px;
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    font-size: 15px;
+    margin-top: 13px auto 5px;
+    display: none;
+}
+
+.summary .summary-left .secure-shopping {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.summary .summary-right {
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    font-size: 15px;
+}
+
+.summary .summary-right .summary-item {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(10, 15, 19, 0.2);
+    padding-bottom: 8px;
+    overflow: visible;
+}
+
+.summary .summary-right .summary-item>dl>div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.summary .summary-right dt,
+.summary .summary-right dd {
+    float: left;
+    line-height: 1.8em;
+    width: 65%;
+    padding: 7px 0;
+}
+
+.summary .summary-right dd {
+    text-align: right;
+    width: 35%;
+}
+
+.summary .summary-right dl {
+    clear: left;
+    overflow: hidden;
+}
+
+.summary .summary-right .summary-total {
+    font-size: 20px;
+}
+
+.summary .summary-right .summary-item .summary-item-shipping button {
+    margin-top: -3px;
+    margin-bottom: 2px;
+    background: none!important;
+    color: var(--gdjmew);
+    border: none;
+    padding-top: 0;
+    padding-left: 0!important;
+    font: inherit;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.4em;
+    opacity: 1;
+}
+
+.distpicker .artModal-dialog {
+    max-width: 500px
+}
+
+.distpicker .artModal-content {
+    padding: 55px 100px!important;
+}
+
+.distpicker .artModal-content h3 {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.distpicker .artModal-content label {
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+    font-size: 15px;
+    color: rgba(10, 15, 19, 0.6);
+    line-height: 1.86;
+    color: var(--1aug3g5);
+    margin-bottom: 3px;
+}
+
+.distpicker .artModal-content select {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 15px;
+    padding: 0 20px;
+    border-radius: 0;
+    margin-bottom: 35px;
+    height: 48px;
+}
+
+.distpicker .artModal-content label {
+    display: block;
+}
+
+.distpicker .artModal-content select {
+    display: block;
+    border: solid 1px rgba(10, 15, 19, 0.2);
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../img/arrow-down.png") no-repeat scroll right center transparent;
+    padding-right: 14px;
+    background-color: transparent;
+    border-radius: 10;
+}
+
+.distpicker .artModal-content select::-ms-expand {
+    display: none;
+}

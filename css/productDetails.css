@@ -22,6 +22,8 @@
 }
 .product-details{
     overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
 }
 .product-details-right {
     padding: 0;
@@ -182,6 +184,7 @@
     margin: 0;
     line-height: 0;
     list-style: none;
+    overflow: visible;
 }
 
 .product-details-left .color ul li {
@@ -218,6 +221,18 @@
     left: -5px;
     opacity: 1;
 }
+#color-tip{
+    margin-left: 65px ;
+    display: none;
+    opacity: 1;
+}
+#color-tip .tooltip-arrow{
+    border-right-color: red;
+}
+#color-tip .tooltip-inner{
+    background-color: red;
+}
+
 
 .product-details-left h4 {
     color: #5A5959;
@@ -227,21 +242,6 @@
     font: normal normal normal 20px/1.25em Museo-700, serif;
     font-size: 15px;
     opacity: .75;
-}
-
-.product-details-left button {
-    margin-top: 30px;
-    background-color: rgba(58, 128, 153, 1);
-    border-width: 0;
-    border-color: rgba(58, 128, 153, 1);
-    border-radius: 0px;
-    font: normal normal normal 16px/1.55em Museo-Slab-W01-100, serif;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 30px;
-    display: block;
-    text-align: center;
-    width: 100%;
-    padding: 15px 20px;
 }
 
 .product-details-left .quantity input {
