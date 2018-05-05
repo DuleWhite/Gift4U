@@ -3,7 +3,6 @@ $(function() {
 	$(".btn-add-note").click(function(){
 		if($(".cart-note textarea").css("display")=="none"){
 			$(".cart-note textarea").css("display","block");
-			$(".cart-note textarea").css("margin","15px 0 10px");
 		}
 		else{
 			$(".cart-note textarea").css("display","none");
