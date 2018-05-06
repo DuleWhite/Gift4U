@@ -30,7 +30,25 @@
 .cart-list {
     margin: 40px auto 150px;
 }
-
+.empty-cart{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(10, 15, 19, 0.2);
+    padding: 175px 0;
+    text-align: center;
+    font: normal normal normal 20px/1.25em Museo-700, serif;
+}
+.empty-cart span{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 1.1;
+}
+.empty-cart a{
+    text-decoration: underline;
+    color: black;
+    font-size: 15px;
+}
 .continue-shopping {
     overflow: hidden;
 }

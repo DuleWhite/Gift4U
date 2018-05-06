@@ -32,4 +32,7 @@ $(function() {
 			distpickerModal.close();
 		}
 	});
+	$(".checkout").click(function(){
+		$(window).attr('location','thanks.html');
+	})
 });
