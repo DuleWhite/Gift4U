@@ -32,7 +32,17 @@ $(function() {
 			distpickerModal.close();
 		}
 	});
-	$(".checkout").click(function(){
+	$("#checkout").click(function(){
 		$(window).attr('location','thanks.html');
-	})
+	});
+	$(".btn-remove").click(function(){
+		$(this).parent().parent().parent().remove();
+		if(true){//请求判断是否为空
+			$(".list-header .list-title span").remove();
+			$(".list-header .list-parameters").remove();
+			$(".empty-cart").css("display","block");
+			$(".list-body").remove();
+			$(".summary").remove();
+		}
+	});
 });
