@@ -35,7 +35,7 @@ $(function() {
     for (var i = 0; i < product_parameters.length; i++) {
         var h3title = $(product_parameters[i]).find("h3");
         if (h3title.attr("class") == "on") {
-            $(product_parameters[i]).next().css("display", "block");
+            $(product_parameters[i]).next().show();
         }
     }
 
@@ -43,10 +43,10 @@ $(function() {
     product_parameters.click(function() {
         var h3title = $(this).find("h3");
         if (h3title.attr("class") == "off") {
-            $(currentOnProductPatameters).next().css("display", "none");
+            $(currentOnProductPatameters).next().hide();
             $(currentOnProductPatameters).find("h3").removeClass("on");
             $(currentOnProductPatameters).find("h3").addClass("off");
-            $(this).next().css("display", "block");
+            $(this).next().show();
             h3title.removeClass("off");
             h3title.addClass("on");
             currentOnProductPatameters = this;
@@ -55,20 +55,32 @@ $(function() {
 
     $("#btn-add-to-cart").click(function() {
         if (!currentSelectedColor) {
-            $("#color-tip").css("display", "block");
+            $("#color-tip").show();
             return;
         }
         if (currentSelectedColor) {
-            $("#color-tip").css("display", "none");
+            $("#color-tip").hide();
         }
         var quantity = $("#quantity-input").val();
         var $btn = $(this).button('loading')
-        $("#add-success").css("display", "block");
+        $("#add-success").show();
         $btn.button('reset');
     });
 
     $(".close").click(function() {
         // $(".alert").alert('close');
-        $("#add-success").css("display", "none");
+        $("#add-success").hide();
+    });
+
+    var sizeList = $("#size-list")
+    $("#selected-size").click(function() {
+        if (sizeList.css("display") == "none")
+            sizeList.show();
+        else
+            sizeList.hide();
+    });
+    $("#size-list li").click(function() {
+        $("#selected-size span")[0].innerHTML = $(this).find("span")[0].innerHTML;
+        sizeList.hide();
     });
 });

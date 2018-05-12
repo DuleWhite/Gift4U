@@ -268,6 +268,77 @@
     background-color: red;
 }
 
+#size {
+    font: normal normal normal 15px/1.25em Museo-700, serif;
+    position: relative;
+}
+
+#selected-size {
+    border: 1px solid silver;
+    border-radius: 0;
+    padding-left: 16px;
+    height: 47px;
+    line-height: 47px;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+}
+
+#selected-size:hover {
+    border-color: #333;
+}
+
+#selected-size b {
+    position: absolute;
+    color: #575757;
+    border: 0;
+    background: none;
+    top: 1px;
+    right: 11px;
+    font-size: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 100%;
+    font-family: glyphicons;
+}
+
+#selected-size b:before {
+    content: "\e259";
+}
+
+#size-list {
+    border: 1px solid silver;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    display: none;
+}
+
+#size-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+#size-list li {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    list-style: none;
+    color: #000;
+    padding-left: 16px;
+    z-index: 999;
+    height: 47px;
+    line-height: 47px;
+}
+
+#size-list li:hover {
+    background: #f1f1f1;
+}
+
+
 
 .product-details-left h4 {
     color: #5A5959;
