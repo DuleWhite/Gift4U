@@ -8,18 +8,18 @@
     src: url("../font/Antreas.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: glyphicons;
     src: url("../font/glyphicons-halflings-regular.ttf");
     /*src: ulr("../font/glyphicons.woff");*/
 }
 
-@font-face{
+@font-face {
     font-family: avenir-lt-w01_35-light1475496;
     src: url("../font/Avenir LT W01 35 Light.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: Futura-LT-Book;
     src: url("../font/FuturaLT-Book.otf");
 }

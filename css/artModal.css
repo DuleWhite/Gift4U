@@ -49,30 +49,30 @@
 }
 
 @media (min-width: 0) {
-    .artModal .artModal-dialog{
+    .artModal .artModal-dialog {
         width: 300px;
     }
 }
 
 @media (min-width: 768px) {
-    .artModal .artModal-dialog{
+    .artModal .artModal-dialog {
         width: 550px;
     }
 }
 
 @media (min-width: 992px) {
-    .artModal .artModal-dialog{
+    .artModal .artModal-dialog {
         width: 940px;
     }
 }
 
 @media (min-width: 1200px) {
-    .artModal .artModal-dialog{
+    .artModal .artModal-dialog {
         width: 940px;
     }
 }
 
-.artModal .artModal-dialog{
+.artModal .artModal-dialog {
     vertical-align: center;
     position: relative;
     padding: 0;
@@ -86,10 +86,11 @@
     min-height: 660px;
 }
 
-.artModal .artModal-dialog .artModal-content .modal-body{
+.artModal .artModal-dialog .artModal-content .modal-body {
     padding: 0;
     margin: 0;
 }
+
 .fade {
     opacity: 0;
     -webkit-transition: opacity 0.15s linear;

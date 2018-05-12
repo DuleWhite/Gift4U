@@ -5,13 +5,14 @@
     .continue-shopping a {
         float: none;
     }
-    .continue-shopping .btn-confirm  {
+    .continue-shopping .btn-confirm {
         float: none;
         margin: 0 auto;
         margin-top: 20px;
         width: 100%;
     }
 }
+
 @media(min-width: 768px) {
     .orders-body {
         width: 550px;
@@ -19,13 +20,14 @@
     .continue-shopping a {
         float: left;
     }
-    .continue-shopping .btn-confirm  {
+    .continue-shopping .btn-confirm {
         float: right;
         margin: 0 auto;
         margin-top: 20px;
         width: 220px;
     }
 }
+
 @media(min-width: 992px) {
     .orders-body {
         width: 900px;
@@ -33,13 +35,14 @@
     .continue-shopping a {
         float: left;
     }
-    .continue-shopping .btn-confirm  {
+    .continue-shopping .btn-confirm {
         float: right;
         margin: 0;
         margin-left: 20px;
         width: 220px;
     }
 }
+
 @media(min-width: 1200px) {
     .orders-body {
         width: 900px;
@@ -47,7 +50,7 @@
     .continue-shopping a {
         float: left;
     }
-    .continue-shopping .btn-confirm  {
+    .continue-shopping .btn-confirm {
         float: right;
         margin: 0;
         margin-left: 20px;
@@ -59,7 +62,7 @@
     margin: 40px auto 150px;
 }
 
-.order-list{
+.order-list {
     margin-top: 40px;
     margin-bottom: 18px;
 }
@@ -86,6 +89,7 @@
     color: black;
     font-size: 15px;
 }
+
 .continue-shopping {
     overflow: hidden;
 }
@@ -104,6 +108,7 @@
     font-size: 11px;
     margin-right: 4px;
 }
+
 .btn-confirm {
     width: 100%;
     min-height: 42px;
@@ -130,6 +135,7 @@
     font-size: 20px;
     font-family: Futura-LT-Book;
 }
+
 
 
 
@@ -231,6 +237,7 @@
         max-width: 120px;
     }
 }
+
 @media(min-width: 768px) {
     .item .item-left {
         float: left;
@@ -245,6 +252,7 @@
         max-width: 120px;
     }
 }
+
 @media(min-width: 992px) {
     .item .item-left {
         float: left;

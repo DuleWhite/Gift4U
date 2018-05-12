@@ -22,10 +22,10 @@ footer {
     margin: 0;
 }
 
-.navbar-toggle{
-  font-family: serif;
-  width: auto;
-  color: #333;
+.navbar-toggle {
+    font-family: serif;
+    width: auto;
+    color: #333;
 }
 
 input {
@@ -44,7 +44,7 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-button{
+button {
     border: 0;
 }
 
@@ -86,49 +86,53 @@ h1 {
 
 
 @media (min-width: 0) {
-    .navigation{
+    .navigation {
         width: 260px;
     }
 }
 
 @media (min-width: 768px) {
-    .navigation{
+    .navigation {
         width: 550px;
     }
 }
 
 @media (min-width: 992px) {
-    .navigation{
+    .navigation {
         width: 900px;
     }
 }
 
 @media (min-width: 1200px) {
-    .navigation{
+    .navigation {
         width: 940px;
     }
 }
 
-.navigation{
+.navigation {
     margin: 0 auto;
     margin-top: 35px;
     margin-bottom: 60px;
 }
-.navigation ul{
+
+.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.navigation ul li{
+
+.navigation ul li {
     display: inline-flex;
 }
-.navigation ul li+li:before{
+
+.navigation ul li+li:before {
     content: "/";
     margin: 0 5px;
     display: inline-block;
 }
-.navigation ul li a{
-    font: normal normal normal 16px/1.55em Museo-Slab-W01-100,serif;
+
+.navigation ul li a {
+    font: normal normal normal 16px/1.55em Museo-Slab-W01-100, serif;
     color: #0A0F13;
     text-decoration: none;
     color: inherit;

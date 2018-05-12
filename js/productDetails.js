@@ -5,7 +5,7 @@ $(function() {
     $(".guide-img").click(function() {
         var oldPath = this.src,
             newPath = "";
-        newPath += oldPath.replace(/-s/,"-l");
+        newPath += oldPath.replace(/-s/, "-l");
         $("#zoom-img").attr('src', newPath);
         $("#magiczoom-zoom").css('background-image', 'url(' + newPath + ')');
         $(currentSelectedImg).removeClass("selected");
@@ -63,12 +63,12 @@ $(function() {
         }
         var quantity = $("#quantity-input").val();
         var $btn = $(this).button('loading')
-        $("#add-success").css("display","block");
+        $("#add-success").css("display", "block");
         $btn.button('reset');
     });
 
     $(".close").click(function() {
         // $(".alert").alert('close');
-        $("#add-success").css("display","none");
+        $("#add-success").css("display", "none");
     });
 });

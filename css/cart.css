@@ -43,6 +43,7 @@
         width: 220px;
     }
 }
+
 @media (min-width: 1200px) {
     .cart-list {
         width: 900px;
@@ -114,6 +115,7 @@
 }
 
 
+
 /*item list header*/
 
 @media(min-width: 0) {
@@ -134,7 +136,7 @@
 
 @media (min-width: 768px) {
     .item-list .list-header .list-title {
-        float:left;
+        float: left;
     }
     .item-list .list-header .list-parameters {
         width: 260px;
@@ -214,6 +216,7 @@
 }
 
 
+
 /*item list body*/
 
 @media(min-width: 0) {
@@ -235,6 +238,7 @@
         width: 84px;
     }
 }
+
 @media(min-width: 768px) {
     .item .item-left {
         float: left;
@@ -274,6 +278,7 @@
         width: 120px;
     }
 }
+
 @media(min-width: 1200px) {
     .item .item-left {
         float: left;
@@ -390,6 +395,7 @@
 .item .item-right input[type="number"] {
     -moz-appearance: textfield;
 }
+
 
 
 
