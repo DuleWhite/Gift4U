@@ -11,14 +11,35 @@
 		width: 100%;
 		padding-left: 10px;
 	}
-	.right input{
+	.loginpage{
+		margin-top: 40px;
+	}
+	.panel .content .right div input {
 		width: 180px;
+	}
+}
+@media(min-width: 768px){
+	.panel{
+		width: 700px
+	}
+	.left{
+		float: left;
+		width: 50%;
+		display: block;
+	}
+	.right{
+		float: right;
+		width:50%;
+		padding-left: 40px;
 	}
 	.loginpage{
 		margin-top: 40px;
 	}
+	.panel .content .right div input {
+		width: 180px;
+	}
 }
-@media(min-width: 900px){
+@media(min-width: 992px){
 	.panel{
 		width: 800px
 	}
@@ -32,11 +53,32 @@
 		width:50%;
 		padding-left: 40px;
 	}
-	.right input{
-		width: auto;
+	.loginpage{
+		margin-top: 40px;
+	}
+	.panel .content .right div input {
+		width: 250px;
+	}
+}
+@media(min-width: 1200px){
+	.panel{
+		width: 800px
+	}
+	.left{
+		float: left;
+		width: 50%;
+		display: block;
+	}
+	.right{
+		float: right;
+		width:50%;
+		padding-left: 40px;
 	}
 	.loginpage{
 		margin-top: 40px;
+	}
+	.panel .content .right div input {
+		width: 250px;
 	}
 }
 .signupin{
@@ -87,6 +129,7 @@
 .panel .content .right label{
 	margin-top: 20px;
 	color: gray;
+	margin-left: 5px;
 }
 .panel .content .right label:first-child{
 	margin-top: 0;
@@ -97,6 +140,7 @@
     height: 43px;
     padding-left: 13px;
     padding-right: 27px;
+    margin-left: 5px;
 }
 .panel .content .right div input::-webkit-outer-spin-button,
 .panel .content .right div input::-webkit-inner-spin-button {
@@ -113,7 +157,12 @@
     font-family: avenir-lt-w01_35-light1475496, sans-serif;
     height: 43px;
     width: 80px;
+    margin: 0;
     margin-left: 10px;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    vertical-align: top;
 }
 span.hint{
 	margin-top: 5px;
@@ -124,4 +173,5 @@ span.hint{
 span.have-account{
 	margin-top: 10px;
 	display: block;
+	margin-left: 5px;
 }

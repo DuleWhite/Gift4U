@@ -5,15 +5,7 @@ $(function() {
     $(".guide-img").click(function() {
         var oldPath = this.src,
             newPath = "";
-        var oldPaths = oldPath.split(".");
-        for (var i = 0; i < oldPaths.length - 1; i++) {
-            if (newPath != "") {
-                newPath += ".";
-            }
-            newPath += oldPaths[i];
-        }
-        newPath += '-L.';
-        newPath += oldPaths[oldPaths.length - 1];
+        newPath += oldPath.replace(/-s/,"-l");
         $("#zoom-img").attr('src', newPath);
         $("#magiczoom-zoom").css('background-image', 'url(' + newPath + ')');
         $(currentSelectedImg).removeClass("selected");

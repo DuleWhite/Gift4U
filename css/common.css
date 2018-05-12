@@ -44,6 +44,10 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+button{
+    border: 0;
+}
+
 .gift4u-button {
     margin-top: 30px;
     background-color: rgba(58, 128, 153, 1);
@@ -87,9 +91,21 @@ h1 {
     }
 }
 
+@media (min-width: 768px) {
+    .navigation{
+        width: 550px;
+    }
+}
+
 @media (min-width: 992px) {
     .navigation{
         width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navigation{
+        width: 940px;
     }
 }
 
